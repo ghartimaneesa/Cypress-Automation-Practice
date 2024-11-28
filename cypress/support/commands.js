@@ -93,7 +93,6 @@ Cypress.Commands.add('selectDate',function(date){
     datePicker.getDay().eq(date-1).click()
     cy.log(date + 'day is selected')
     cy.wait(5000)
-    // cy.selectDate(date)
 
 })
 

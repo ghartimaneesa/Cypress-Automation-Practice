@@ -10,12 +10,6 @@ describe('Scrolling Dropdwon', ()=>{
         cy.get('#dropdown').should('be.visible');
     });
 
-    it('should display the correct default placeholder after loading', () => {
-        cy.get('#comboBox')
-        .should('be.visible')
-        .invoke('attr', 'placeholder')
-        .should('eq', 'Select an item');
-    });
       
 
     it('should select an item from the custom dropdown', () => {

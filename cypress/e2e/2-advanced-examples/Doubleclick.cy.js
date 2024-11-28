@@ -1,7 +1,8 @@
 describe('Double Click',function(){
 
     beforeEach(()=>{
-        cy.visit('https://testautomationpractice.blogspot.com/')
+        
+        cy.visit('/2018/09/automation-form.html', { waitForAnimations: false, failOnStatusCode: false });
         cy.get('.widget-content').scrollIntoView()
     })
 

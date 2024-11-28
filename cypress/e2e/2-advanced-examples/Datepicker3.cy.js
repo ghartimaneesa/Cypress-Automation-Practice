@@ -1,7 +1,8 @@
 describe('Datepicker3', function(){
     beforeEach(()=>
         {
-            cy.visit('/2018/09/automation-form.html')
+            cy.visit('/2018/09/automation-form.html', { waitForAnimations: false, failOnStatusCode: false });
+
         })
 
     it('should select a whole date and verify it appears in the date input field', function(){

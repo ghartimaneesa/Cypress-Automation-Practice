@@ -4,6 +4,8 @@ require ('@4tw/cypress-drag-drop')
 
 describe('Drag and Drop', function(){
 
+    this.beforeEach
+
     it('Drag a object to the target', function(){
 
         cy.visit('https://testautomationpractice.blogspot.com/')

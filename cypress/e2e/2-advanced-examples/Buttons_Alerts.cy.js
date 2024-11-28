@@ -21,8 +21,8 @@ describe('alerts and pops', function(){
     it('Handles the Confirmation Alert button', function(){
         
         cy.get('#confirmBtn').click() 
-        // cy.on('window:confirm', () => false)
-        cy.on('window:confirm', () => true)
+        cy.on('window:confirm', () => false)
+        // cy.on('window:confirm', () => true)
         cy.get('#demo').should('have.text','You pressed Cancel!')
         
     })
